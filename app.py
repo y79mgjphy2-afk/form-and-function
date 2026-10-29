@@ -4,7 +4,7 @@ import secrets
 import time
 import urllib.request
 
-from flask import Flask, jsonify, request, session
+from flask import Flask, jsonify, render_template, request, session
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SESSION_SECRET') or secrets.token_hex(32)
@@ -138,7 +138,7 @@ def live_plan(profile):
 
 @app.get('/')
 def index():
-    return app.send_static_file('index.html')
+    return render_template('index.html')
 
 
 @app.get('/api/config')

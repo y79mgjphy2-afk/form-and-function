@@ -28,7 +28,13 @@ This is a classroom prototype, not a medical device or a substitute for a qualif
 
 The app does not save workout plans to a database. You can download a plan as JSON or print it from the browser; workout completion marks are temporary and reset when a new plan is generated or the page is refreshed. Browser sessions use CSRF protection and HTTP-only, SameSite cookies; live requests are sent to the configured model provider. Use demo mode for anonymous public access. Before enabling a paid live endpoint publicly, add authentication and global usage controls.
 
-## Deployment
+## Vercel deployment
+
+Import this GitHub repository at https://vercel.com/new . Vercel detects Flask from requirements.txt and app.py. The build command in vercel.json copies CSS and JavaScript into public/static for Vercel's CDN. The page is rendered from templates/index.html. No Node build is required.
+
+Set SESSION_SECRET to a stable random value in Vercel's environment variables before deploying, so signed sessions work across function instances. Keep live mode disabled for the public class demo by leaving OPENAI_API_KEY unset. If enabling live mode later, add authentication and global cost controls first. The model key must remain a server-side environment variable.
+
+## Render deployment (alternative)
 
 `render.yaml` defines a Render Python service using Waitress. Push this folder to your GitHub repository, then create a Render Blueprint from the repository. Configure `SESSION_SECRET` and, optionally, `OPENAI_API_KEY` in the Render dashboard.
 

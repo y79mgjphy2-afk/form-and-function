@@ -5,3 +5,7 @@
 __pycache__/
 *.pyc
 *.log
+
+# Generated CDN assets for Vercel
+/public/
+.vercel/
