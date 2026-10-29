@@ -14,8 +14,8 @@ Christopher Chery\\
 October 29, 2026
 \end{center}
 \vspace{6pt}
-\textbf{Local website:} \url{http://127.0.0.1:5001/}\\
-\textbf{Public website:} Vercel setup prepared; account verification pending.\\
+\textbf{Local website:} \url{http://127.0.0.1:5002/}\\
+\textbf{Public website:} \url{https://form-and-function-764.vercel.app/}\\
 \textbf{GitHub repository:} \url{https://github.com/y79mgjphy2-afk/form-and-function}
 
 \section*{About the project}
@@ -87,14 +87,14 @@ There are some limits to the current version. Demo plans are based on a small se
 The website gives general fitness suggestions. Its warnings and AI instructions do not guarantee that an exercise is suitable for a person with an injury or health condition. It does not replace advice from a qualified health professional. Checking the structure of an AI response also does not prove that the workout itself is safe or useful.
 
 \section*{Running and presenting the project}
-To run the app, create a Python virtual environment, install the packages in \texttt{requirements.txt}, and start \texttt{app.py}. The source uses port 5000 by default. Setting the \texttt{PORT} variable to 5001 matches the local address used for this report.
+To run the app, create a Python virtual environment, install the packages in \texttt{requirements.txt}, and start \texttt{app.py}. The source uses port 5000 by default. Setting the \texttt{PORT} variable to 5002 matches the local address used for this report.
 
-The address \url{http://127.0.0.1:5001/} only works on the computer running the server. The source is available at \url{https://github.com/y79mgjphy2-afk/form-and-function}. The app has been prepared for Vercel, including its build settings and public assets. Deployment is waiting on hosting-account verification, so no public app URL has been verified yet.
+The address \url{http://127.0.0.1:5002/} only works on the computer running the server. The source is available at \url{https://github.com/y79mgjphy2-afk/form-and-function}. The app is deployed on Vercel at \url{https://form-and-function-764.vercel.app/}. The public page and demo plan generation were checked successfully.
 
 For the class presentation, the demonstration can show a three-day plan with one equipment choice, then a second plan using different equipment. Marking a workout complete shows the progress feature. The JSON download and print buttons show how a user can keep the result. The explanation should make clear which mode is being demonstrated and whether a real AI request is running.
 
 \section*{Next steps}
-The next steps are to complete Vercel account verification, deploy the app, and add the working public link here. A stable SESSION\_SECRET must be set on the host so browser sessions work across server instances. Live AI still needs testing with a real provider account. Longer-term improvements could include saved workout history and a follow-up step that lets the user ask for changes to a plan. If an autonomous agent is required for the assignment, the AI workflow also needs to be extended beyond the current single request.
+Public deployment is complete and the live link is listed above. Vercel should use a stable SESSION\_SECRET for browser sessions. The public version runs in demo mode; live AI still needs testing with a real provider account. Longer-term improvements could include saved workout history and a follow-up step that lets the user ask for changes to a plan. If an autonomous agent is required for the assignment, the AI workflow also needs to be extended beyond the current single request.
 
 
 

@@ -2,6 +2,8 @@
 
 A Flask fitness-coach prototype that creates weekly workout plans from a person's goal, experience, schedule, and available equipment.
 
+Live website: https://form-and-function-764.vercel.app/
+
 Repository: https://github.com/y79mgjphy2-afk/form-and-function
 
 ## Run locally
@@ -40,7 +42,7 @@ Set SESSION_SECRET to a stable random value in Vercel's environment variables be
 
 ## Course report
 
-`report.tex` is the LaTeX project report and `report.pdf` is its compiled version. The GitHub link is included; the public app link remains pending deployment.
+`report.tex` is the LaTeX project report and `report.pdf` is its compiled version. The GitHub and public Vercel website links are included. The public demo was checked for plan generation and workout progress tracking.
 
 ## Tests
 
